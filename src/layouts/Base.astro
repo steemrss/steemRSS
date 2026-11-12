@@ -130,6 +130,15 @@ const jsonLdBlocks = jsonLd
           <a href="https://github.com/hiveuprss/hiverss" target="_blank" rel="noopener">GitHub</a>
           <a href="https://hive.blog" target="_blank" rel="noopener">Hive</a>
           <a href="https://hiveposh.com" target="_blank" rel="noopener">HivePosh</a>
+          <a href="https://hive.io" target="_blank" class="footer-powered" title="Powered by Hive">
+            <img
+              src="/badge-powered-by-hive.svg"
+              alt="Powered by Hive"
+              class="footer-hive-logo"
+              width="102"
+              height="36"
+            />
+          </a>
         </div>
       </div>
     </footer>
@@ -264,6 +273,18 @@ const jsonLdBlocks = jsonLd
     transition: color 0.15s;
   }
   .footer-links a:hover { color: var(--text-muted); }
+  .footer-powered {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: opacity 0.15s;
+  }
+  .footer-powered:hover { opacity: 1; }
+  .footer-hive-logo {
+    display: block;
+    height: 18px;
+    width: auto;
+  }
 
   @media (max-width: 600px) {
     .site-header nav { padding: 1rem 1.25rem; }
